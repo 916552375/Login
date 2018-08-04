@@ -11,7 +11,7 @@
     <title>main</title>
 </head>
 <h1>main page</h1>
-<h2>当前登录用户：${currentUser.userName}</h2>
+<h2>当前登录用户：${currentUser.userName}&nbsp;&nbsp;<a href="logout">注销</a> </h2>
 <body>
 
 </body>

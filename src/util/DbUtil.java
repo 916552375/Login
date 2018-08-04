@@ -25,7 +25,6 @@ public class DbUtil {
             e.printStackTrace();
             System.out.println("数据库连接失败！");
         }
-        System.out.println("数据库连接成功！");
         return connetion;
     }
     public static void closeConnection(Connection connection){
@@ -42,10 +41,4 @@ public class DbUtil {
         }
     }
 
-    public static void main(String[] args) {
-        Connection connection = null;
-        connection =DbUtil.getConnection();
-        DbUtil.closeConnection(connection);
-
-    }
 }
