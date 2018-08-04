@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet {
             currentUser = userDao.login(connection,user);
             if(null == currentUser){
                 System.out.println("登录失败！");
-                request.setAttribute("error","userName or Password invalid");
+                request.setAttribute("error","用户名密码不正确！");
                 request.setAttribute("userName",userName);
                 request.setAttribute("password",password);
                 request.getRequestDispatcher("login.jsp").forward(request,response);
